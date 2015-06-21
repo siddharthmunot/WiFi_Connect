@@ -50,6 +50,3 @@ CREDITS
 
 This App is build combining two open source projects Serval Project(batphone) (http://www.servalproject.org/) and Share-Via-Http by Marcos Diez.
 Which makes this app as well open source. 
-
-
-
