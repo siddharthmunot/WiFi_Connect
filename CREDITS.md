@@ -1,6 +1,8 @@
 WiFi Connect Credits
 ===================
 1. [Serval Project][], April 2014
+2. [Share-via-Http] by  Marcos Diez -- marcos AT unitron.com.br (https://github.com/marcosdiez/shareviahttp)
+
 
 The following individuals and organisations have contributed to development of
 the [Serval Mesh][] software.  We apologise for any omissions.
@@ -66,4 +68,3 @@ Supporters
 [Flinders University]: http://www.flinders.edu.au/
 [Awesome Foundation, Boston, MA]: http://www.awesomefoundation.org/en/chapters/boston
 
-2. Share-via-Http by  Marcos Diez -- marcos AT unitron.com.br (https://github.com/marcosdiez/shareviahttp)
