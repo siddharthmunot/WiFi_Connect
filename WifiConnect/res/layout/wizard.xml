@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Copyright (C) 2011 The Serval Project
+ * 
+ * This file is part of Serval Software (http://www.org.WifiConnect.org)
+ * 
+ * Serval Software is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * This source code is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this source code; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+
+
+
+
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <!-- Header -->
+
+    <include
+        android:id="@+id/headerLayout"
+        layout="@layout/header_layout" />
+
+    <!-- Body -->
+
+    <RelativeLayout
+        android:id="@+id/wizard_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+
+        <TextView
+            android:id="@+id/wizard_start2"
+            style="@style/stext"
+            android:layout_below="@+id/wizard_start1"
+            android:text="@string/start2" />
+
+        <Button
+            android:id="@+id/btnwizard"
+            style="@style/sbtnrhizome"
+            android:layout_below="@+id/wizard_start2"
+            android:text="@string/btnwizard" />
+
+        <TextView
+            android:id="@+id/wizard_start1"
+            style="@style/stext"
+            android:layout_alignLeft="@+id/wizard_start2"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="88dp"
+            android:text="@string/start1" />
+    </RelativeLayout>
+
+</RelativeLayout>

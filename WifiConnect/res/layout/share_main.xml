@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/header_msg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="all"
+            android:text="@string/header_msg" />
+
+        <TextView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/link_msg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="all"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_horizontal"
+            android:text="@string/standar_url"
+            android:textSize="40px" />
+
+        <TextView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/placeholder1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="all"
+            android:text=" " />
+
+        <TextView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/uriPath"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="all"
+            android:text=" " />
+
+      <!--   <TextView
+            android:id="@+id/txtBarCodeScannerInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/barcode_scanner_msg"
+            android:visibility="gone" /> -->
+
+        <TextView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/placeholder3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="all"
+            android:text=" " />
+
+      <!--    <TextView
+            android:id="@+id/technical_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="all"
+            android:text="@string/technical_info" /> -->
+
+        <TextView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/placeholder4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="all"
+            android:text=" " />
+
+        <!--  <Button
+            android:id="@+id/button_rate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_rate" />
+
+        <Button
+            android:id="@+id/change_ip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/change_ip" />
+
+        <Button
+            android:id="@+id/button_share_containing_folder"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/share_containing_folder" />
+
+        <Button
+            android:id="@+id/stop_server"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/stop_server" /> -->
+        <Button
+            android:id="@+id/button_share_url"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/share_url" />  
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,167 @@
+<?xml version="1.1" encoding="utf-8"?>
+<!--
+ * 
+ * Serval Software is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General xxPublic License as published by
+ * the Free Software Foundation; either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * This source code is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU
+  General Public License
+ * along with this source code; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ -->
+  <!-- @author Romana Challans <romana@org.WifiConnect.org> -->
+  
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+     <!-- Serval General -->
+    <string name="header">WiFi Connect</string>
+    <string name="url">org.WifiConnect.org</string>
+    <string name="app_name">WiFi Connect</string>
+	<string name="agree">I agree</string>
+	<string name="cancel">Cancel</string>
+	
+	<!-- Menu Items -->
+	<string name="Attachment">Attach</string>
+	<string name="Exit">Exit</string>
+	<string name="Share">Share WiFi Connect</string>
+	<string name="Stop_Server">Stop Sharing</string>
+	<string name="Settings">Edit Number</string>
+	<string name="helpLabel">Help</string>
+	<string name="no_name">No Name</string>
+	<!-- Serval Main -->
+	<!-- These must say Serval Mesh, not Serval Network, because Serval provides the protocol, not the infrastructure.
+	This has important implications for telecommunications law in various countries. -->
+	<string name="callLabel">Call</string>    
+    <string name="messageLabel">Messages</string>    
+    <string name="contactsLabel">Contacts</string>    
+    <string name="mapsLabel">Maps</string>    
+    <string name="sharingLabel">Share Files</string>    
+    <string name="servalLabel">Share Us</string>    
+    <string name="settingsLabel">Settings</string>  
+    <string name="powerLabel">Power</string>    
+    <string name="state_power_on">Connect</string>
+    <string name="state_power_off">Connect</string>
+    <string name="state_installing">Installing&#8230;</string>
+    <string name="state_upgrading">Upgrading&#8230;</string>
+    <string name="state_starting">Connect</string>
+    <string name="state_stopping">Connect</string>
+    <string name="state_broken">Broken!</string>
+    <string name="nopeers">There are no other Peers on this network now</string>
+    <string name="share_via">Wifi Connect</string>
+   	
+	<!-- Serval Buttons -->
+	<string name="btnwizard">SETUP WIZARD</string>
+	<string name="btnPhOk">OK</string>
+	
+	<!-- Serval Phone Set -->
+	<string name="cancelcall">Cancel</string>
+	<string name="searchpeers">Search</string>
+    <string name="searchingpeers">Searching...</string>
+    <string name="callcellular">Call via cellular network</string>
+
+    <!-- Serval General -->
+    <string name="setphone">Enter Phone No.</string>
+    <string name="setname">Display Name.</string>
+    <string name="statusstar">Status Indicator</string>
+    
+	<!-- Serval About -->
+	<string name="aboutTitle">About</string>	
+	<string name="emailEnquiries">enquiry@org.WifiConnect.org</string>  
+    
+	<!-- Serval Donations -->
+	<string name="donateTitle">Make a Donation</string>	
+	<string name="donateButton">Donate via PayPal</string>	
+	  
+    <!-- Serval Instruction -->
+    <string name="setdetails">Set Phone Number</string>
+    <string name="phoneInstr">Please enter your phone number.</string>
+	      
+	<!-- Serval Security -->
+    <string name="security_header">Serval Security</string>
+    	
+	<!-- Serval Maps -->
+	<string name="mapInfo">You do not currently have Serval Maps installed. 
+	    \n\nServal Maps is currently under development and it will be coming to the 
+	    Android Marketplace soon. 
+	    \n\nFor more information please visit the Serval Maps web site 
+	    \nhttp://developer.org.WifiConnect.org/wiki
+	    \nIn the meantime, if you have any queries, 
+	    \nplease contact us at \n\n</string>
+
+	<string name="broadcast_meshms_message">Broadcast messages are sent to the whole network.</string>
+
+
+	<!--  Wifi setup / warnings -->
+	<string name="openhotspottitle">Portable Wi-Fi hotspot</string>
+	<string name="openhotspotmessage">Starting an open hotspot will allow other users to consume your cellular data and may cost you money.</string>
+	<string name="adhoctesttitle">HERE BE DRAGONS!</string>
+    <string name="adhoctestmessage">Connecting to an Ad Hoc Wi-Fi network is not supported by Android. Doing this requires root permission, is unlikely to work and has the potential to damage your device and void your warranty.</string>
+	<string name="testbutton">Test</string>
+	<string name="adhocconnecttitle">Ad Hoc Wi-Fi</string>
+	<string name="adhocconnectmessage">Channel: %2$d\nAddress: %3$s</string>
+	<string name="connectbutton">Connect</string>
+	<string name="settingsbutton">Settings</string>
+
+    <plurals name="peers_label">
+        <item quantity="one">%d Peer</item>
+        <item quantity="other">%d Peers</item>
+    </plurals>
+    <string name="server_off">Off</string>
+    <string name="server_starting">Starting</string>
+    <string name="server_idle">Idle</string>
+    <string name="server_nopeers">No Peers</string>
+
+    <string name="connecting">Connecting...</string>
+    <string name="connecting_to">Connecting to %1$s...</string>
+    <string name="connected_to">Connected to %1$s.</string>
+    <string name="ssid_none">[Hidden network]</string>
+    <plurals name="open_networks">
+        <item quantity="one">%d open network.</item>
+        <item quantity="other">%d open networks.</item>
+    </plurals>
+    <plurals name="known_networks">
+        <item quantity="one">%d known network.</item>
+        <item quantity="other">%d known networks.</item>
+    </plurals>
+    <plurals name="serval_networks">
+        <item quantity="one">%d Serval network.</item>
+        <item quantity="other">%d Serval networks.</item>
+    </plurals>
+
+    <string name="wifi_client">Wi-Fi</string>
+    <string name="hotspot">Portable Wi-Fi hotspot</string>
+    <string name="adhoc">Ad Hoc Mesh</string>
+
+    <string name="meshms_delivered">delivered</string>
+    <string name="meshms_read">read</string>
+    
+    <!-- Share with Http -->
+    
+    <string name="header_msg">The chosen file(s) is/are avaliable here:</string>
+    <string name="standar_url">http://127.0.0.1/</string>    
+
+
+
+	<string name="technical_info">Technical restrictions: On 3G, the file transfer will be slow but everybody will have access to it. On WiFi, transfers will be fast but only people on the same network (LAN) will be able to access your files. </string>
+    <string name="barcode_scanner_msg">Also, if you install the <a href="http://market.android.com/details?id=com.google.zxing.client.android">Barcode Scanner</a>, this URL can be sent as a barcode as well.</string>
+        
+    <string name="button_rate">Rate this App</string>
+    <string name="change_ip">Choose the IP Address</string>
+    <string name="share_containing_folder">Share Containing Folder</string>
+    <string name="share_url">Share URL with Peers</string>
+    <string name="stop_server">Stop Server</string>    
+    <string name="standard_url">http://127.0.0.1/</string>  
+    <string name="now_sharing_anymore">The requested file is not being shared anymore.</string>
+      
+    <string name="alert_dialog_ok">OK</string>
+    <string name="alert_dialog_cancel">Cancel</string>
+    
+    
+</resources>

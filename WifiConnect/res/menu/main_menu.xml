@@ -1,0 +1,38 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+  
+   
+    <item
+        android:id="@+id/Attachment"
+        android:title="@string/Attachment"
+        android:icon="@drawable/ic_ab_attach"
+        android:showAsAction="ifRoom" />
+   
+     <item
+        android:id="@+id/Exit"
+        android:title="@string/Exit"
+        android:icon="@drawable/audiocancel2"
+        android:showAsAction="ifRoom"/>
+    
+     <item
+        android:id="@+id/Share"
+        android:title="@string/Share"
+        android:orderInCategory="100"
+        android:showAsAction="never"/>
+    <item
+        android:id="@+id/Settings"
+        android:title="@string/Settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"/>
+    <item
+        android:id="@+id/Stop_Server"
+        android:title="@string/Stop_Server"
+        android:orderInCategory="100"
+        android:showAsAction="never"/>
+    <item
+        android:id="@+id/helpLabel"
+        android:title="@string/helpLabel"
+        android:orderInCategory="100"
+        android:showAsAction="never"/>
+       
+  </menu>
+   

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Copyright (C) 2011 The Serval Project
+ * 
+ * This file is part of Serval Software (http://www.org.WifiConnect.org)
+ * 
+ * Serval Software is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * This source code is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this source code; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <!-- call information -->
+
+    <Chronometer
+        android:id="@+id/call_time"
+        style="@style/scall_status_details_right_time"
+        android:layout_toLeftOf="@+id/serval_id" />
+
+    <TextView
+        android:id="@+id/serval_id"
+        style="@style/scall_status_details_right_label"
+        android:text="@string/app_name" />
+
+    <!-- end call information -->
+
+
+    <TextView
+        android:id="@+id/call_action_type"
+        style="@style/scall_action_type"
+        android:layout_below="@+id/call_time"
+        android:text="@string/in_call" />
+
+    <!--  <ImageView
+        android:id="@+id/caller_image"
+        style="@style/scaller_image2"
+        android:layout_below="@+id/call_action_type"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/caller_image"
+        android:src="@drawable/ic_serval_logo" /> -->
+
+    <TextView
+        android:id="@+id/caller_name"
+        style="@style/scall_action_type"
+        android:layout_below="@+id/call_action_type"
+        android:layout_centerHorizontal="true"
+        android:text="@string/contact_name" />
+
+    <TextView
+        android:id="@+id/ph_no_display"
+		style="@style/scall_no_display"
+        android:layout_below="@+id/caller_name"
+        android:layout_centerHorizontal="true"
+        android:text="@string/phone_number" />
+    
+    <!-- Speaker commented until enabled -->
+    
+   <!--  <Button
+        android:id="@+id/speaker_button"
+        style="@style/sph_controlButtons"
+        android:layout_alignTop="@+id/cancel_call_button"
+        android:layout_toLeftOf="@+id/cancel_call_button"
+        android:background="@drawable/phone_speaker_button"
+        android:layout_marginRight="20dp" />-->
+
+    <Button
+        android:id="@+id/cancel_call_button"
+        style="@style/sph_controlButtons"
+        android:layout_below="@+id/ph_no_display"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/phone_endcall_button" />
+
+    <Button
+            android:id="@+id/answer_button_incoming"
+            style="@style/scall_answer"
+            android:layout_toLeftOf="@+id/ph_no_display"
+            android:layout_below="@+id/ph_no_display" />
+
+    <Button
+            android:id="@+id/incoming_decline"
+            style="@style/scall_decline"
+            android:layout_alignBottom="@+id/answer_button_incoming"
+            android:layout_toRightOf="@+id/ph_no_display" />
+
+    <!-- DTMF commented until enabled -->
+         <!--   <Button
+              android:id="@+id/dialpad_button"
+              style="@style/sph_controlButtons"
+              android:layout_alignTop="@+id/cancel_call_button"
+              android:layout_toRightOf="@+id/cancel_call_button"
+              android:layout_marginLeft="20dp" 
+              android:background="@drawable/phone_dialpad_button" />-->
+</RelativeLayout>

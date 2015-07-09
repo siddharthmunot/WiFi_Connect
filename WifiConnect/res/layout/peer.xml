@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"  >
+
+    <!--  <TextView
+        android:id="@+id/nopeers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:padding="4dp"
+        android:text="@string/nopeers" /> -->
+        
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/call"
+        android:padding="4dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <!-- <ImageView
+        android:id="@+id/add_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="4dp"
+        android:src="@drawable/sym_action_add" /> -->
+
+    <TextView
+        android:id="@+id/Number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Name"
+        android:padding="4dp"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+    <!--  <TextView
+        android:id="@+id/sid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/Name"
+        android:padding="4dp"
+        android:textAppearance="?android:attr/textAppearanceSmall" /> -->
+
+    <ImageView
+        android:id="@+id/chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:padding="4dp"
+        android:src="@android:drawable/sym_action_chat" />
+
+     <ImageView
+         android:id="@+id/call"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/chat"
+         android:layout_toLeftOf="@+id/chat"
+         android:clickable="true"
+         android:padding="4dp"
+         android:src="@android:drawable/sym_action_call" />
+
+      <ImageView
+          android:id="@+id/share_msg"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_alignTop="@+id/Number"
+          android:src="@drawable/ic_ab_share"/>
+      
+</RelativeLayout>

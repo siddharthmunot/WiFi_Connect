@@ -1,0 +1,234 @@
+<!--
+ * 
+ * Wifi Connect is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This source code is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this source code; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="org.WifiConnect" android:versionName="@string/version"
+      android:installLocation="auto"
+      android:versionCode="2" >
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="19"/>
+    
+    <!-- WiFi Connect permissions -->
+    
+    <permission android:name="org.WifiConnect.meshms.SEND_MESHMS" 
+        android:description="@string/system_permission_meshms_send_description" 
+        android:protectionLevel="dangerous" 
+        android:permissionGroup="android.permission-group.MESSAGES" 
+        android:label="@string/system_permission_meshms_send_label"
+        />
+
+    <!-- Serval Specific permissions -->
+    <uses-permission android:name="org.WifiConnect.meshms.SEND_MESHMS"/>
+    <uses-permission android:name="org.WifiConnect.rhizome.RECEIVE_FILE"/>
+    
+    <!-- Commotion's mesh tether permissions -->
+    <uses-permission android:name="net.commotionwireless.meshtether.ACCESS_STATE"/>
+    <uses-permission android:name="net.commotionwireless.meshtether.CHANGE_STATE"/>
+
+    <!--  android permissions -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+	<uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+	<uses-permission android:name="android.permission.VIBRATE"></uses-permission>
+	<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"></uses-permission>
+	<uses-permission android:name="android.permission.RECORD_AUDIO"></uses-permission>
+	<uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"></uses-permission>
+	<uses-permission android:name="android.permission.WRITE_SETTINGS"></uses-permission>
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"></uses-permission>
+	<uses-permission android:name="android.permission.WRITE_CONTACTS"></uses-permission>
+	<uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+	<uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission>
+	<uses-permission android:name="android.permission.DISABLE_KEYGUARD"></uses-permission>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" ></uses-permission>
+	<uses-permission android:name="android.permission.GET_ACCOUNTS" ></uses-permission>
+	<uses-permission android:name="android.permission.BROADCAST_STICKY" ></uses-permission>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"></uses-permission>
+	<uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+	<uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+	<uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PROFILE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    	    
+        <!-- uses features -->
+    <uses-feature android:name="android.hardware.wifi" android:required="true" />
+	<uses-feature android:name="android.hardware.telephony" android:required="false" />
+	<uses-feature android:name="android.hardware.microphone" android:required="false" />
+	<uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+	<uses-feature android:name="android.hardware.faketouch" android:required="false" />
+    
+    
+    <application android:icon="@drawable/ic_launcher" 
+        android:label="@string/app_name" 
+		android:name=".ServalBatPhoneApplication" 
+		android:theme="@android:style/Theme.Holo">
+        
+        <activity android:name="PreparationWizard"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.PREPARATION" />
+
+            </intent-filter>
+        </activity>
+             
+       <activity android:name=".PeerList"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask" >
+        <intent-filter>   
+            	<action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>   
+        </activity>
+        <activity android:name=".ui.ShareUsActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            />
+  		 <activity android:name=".ui.AdhocPreferences"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            />             
+   		 <activity android:name=".ui.SetupActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            />             
+      
+ 		<activity android:name=".ui.help.HtmlHelp"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            />
+
+        <activity android:name=".wizard.Wizard"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            />
+        <activity android:name=".wizard.SetPhoneNumber"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            />
+
+        <activity android:name=".batphone.CallDirector"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:taskAffinity="org.WifiConnect.Call"
+            />
+
+        <activity android:name=".batphone.UnsecuredCall"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:taskAffinity="org.WifiConnect.Call"
+            >
+            <intent-filter>
+	            <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT" />
+	            <data android:mimeType="vnd.android.cursor.item/org.WifiConnect.unsecuredSid"/>
+	        </intent-filter>
+	    </activity>
+
+        <activity android:name=".LogActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            />
+        
+	      <receiver android:name="org.WifiConnect.batphone.BatPhone">
+	        <intent-filter>
+	        	<action android:name="android.intent.action.AIRPLANE_MODE" />
+	        	<action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+	        	<action android:name="android.net.wifi.WIFI_AP_STATE_CHANGED" />
+	        	<action android:name="android.net.wifi.supplicant.STATE_CHANGE" />
+	        	<action android:name="android.net.wifi.STATE_CHANGE"/>
+	        	<action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+	        	<action android:name="android.net.wifi.SCAN_RESULTS"/>
+	        	<action android:name="org.WifiConnect.ADHOC_STATE_CHANGED_ACTION" />
+	        	<action android:name="org.WifiConnect.MODE_ALARM"/>
+	        	<action android:name="net.commotionwireless.meshtether.STATE_CHANGED"/>
+	        </intent-filter>
+	        <intent-filter>
+	        	<action android:name="android.intent.action.MEDIA_EJECT" />
+	        	<action android:name="android.intent.action.MEDIA_MOUNTED" />
+	        	<action android:name="android.intent.action.MEDIA_UNMOUNTED" />
+                <data android:scheme="file" />
+	        </intent-filter>
+	    </receiver>
+	    
+	    <receiver android:name=".NotificationClose" />
+	    
+	    <service android:name=".Control"
+	             android:enabled="true"/>
+	    
+	    <service android:name=".account.AccountService">  
+	        <intent-filter>  
+	            <action android:name="android.accounts.AccountAuthenticator" />
+	        </intent-filter>  
+	        <meta-data android:name="android.accounts.AccountAuthenticator" android:resource="@xml/authenticator" />  
+	    </service>
+	    
+	    
+        <activity
+            android:name="org.WifiConnect.share.activities.MainActivity"
+            android:launchMode="singleTop" 
+	        android:screenOrientation="portrait"
+	        android:theme="@style/AppTheme"
+	        android:icon="@drawable/ic_launcher"/>
+            	    
+	   
+	    <activity
+            android:name="org.WifiConnect.share.activities.SendFileActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme"
+            android:icon="@drawable/ic_launcher">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                 <data android:mimeType="*/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                 <data android:mimeType="*/*" />
+            </intent-filter>
+	    </activity>
+ 
+        <!-- serval meshms service -->
+
+       	<activity android:name=".messages.ShowConversationActivity"
+		    android:screenOrientation="portrait"
+		    >
+		    <intent-filter>
+		        <action android:name="android.intent.action.SENDTO" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="sms" />
+			</intent-filter>
+		    		    <intent-filter>
+		        <action android:name="android.intent.action.SENDTO" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="smsto" />
+			</intent-filter>
+		</activity>
+		
+		<service android:enabled="true" android:exported="true" android:name=".system.StateCheckIntentService">
+			<intent-filter>
+				<action android:name="org.WifiConnect.ACTION_STATE_CHECK"/>
+			</intent-filter>
+		</service>
+
+    </application>
+
+</manifest>

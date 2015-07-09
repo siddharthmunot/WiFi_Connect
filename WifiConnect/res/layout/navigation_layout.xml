@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="4dp"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal" 
+    android:background="@color/light_blue">
+
+    <org.WifiConnect.share.views.RoundedImageButtonWithTextView
+        android:id="@+id/stop_server"
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.02"
+        app:imageSrc="@drawable/ic_stop"
+        app:text="@string/stop_server" />
+
+    <org.WifiConnect.share.views.RoundedImageButtonWithTextView
+        android:id="@+id/button_share_url"
+        android:layout_width="wrap_content"
+        android:layout_height="99dp"
+        android:layout_weight="0.01"
+        app:imageSrc="@drawable/ic_share"
+        app:text="@string/share_url" />
+
+</LinearLayout>

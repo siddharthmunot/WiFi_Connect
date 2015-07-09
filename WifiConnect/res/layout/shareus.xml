@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Copyright (C) 2011 The Serval Project
+ * 
+ * This file is part of Serval Software (http://www.org.WifiConnect.org)
+ * 
+ * Serval Software is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * This source code is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this source code; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+-->
+
+<!-- @author Andrew Bettison <andrew@org.WifiConnect.org> -->
+<!-- @author Romana Challans <romana@org.WifiConnect.org> -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <!-- Header -->
+
+    <!-- Body -->
+
+    <TextView
+        android:id="@+id/share_us_header"
+        style="@style/share_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="26dp"
+        android:text="@string/share_us_header" />
+
+   <!-- <TextView
+        android:id="@+id/share_us_warning"
+        style="@style/stextleft"
+        android:layout_above="@+id/share_us_header"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="26dp"
+        android:text="@string/share_us_warning" />
+
+      <Button
+        android:id="@+id/share_us_button"
+        style="@style/sbtnrhizome"
+        android:layout_above="@+id/share_us_warning"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="26dp"
+        android:text="@string/share_us_button_text" /> 
+
+    <TextView
+        android:id="@+id/share_us_text"
+        style="@style/stextleft"
+        android:layout_above="@+id/share_us_warning"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="26dp"
+        android:text="@string/share_us_text" /> -->
+
+     <TextView
+        android:id="@+id/share_wifi_instr"
+        style="@style/stextleft"
+        android:layout_below="@+id/share_us_header"
+        android:layout_marginTop="31dp"
+        android:text="@string/share_wifi_instr" />
+     
+    <TextView
+        android:id="@+id/share_wifi"
+        style="@style/stextleft"
+        android:layout_alignLeft="@+id/share_wifi_instr"
+        android:layout_below="@+id/share_wifi_instr"
+        android:layout_marginTop="25dp"
+        android:text="@string/share_wifi_off" />
+    
+    </RelativeLayout>
+

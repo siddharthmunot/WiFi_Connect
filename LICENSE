@@ -1,6 +1,29 @@
 
+WiFi Connect is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 3 of the License, or
+(at your option) any later version.
 
+The source code is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this source code; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+
+
+ This program is free software; you can redistribute it and/or modify it under
+ the terms of the GNU General Public License as published by the Free Software
+ Foundation; either version 3 of the License, or (at your option) any later
+ version.
+ You should have received a copy of the GNU General Public License along with
+ this program; if not, see <http://www.gnu.org/licenses/>.
+ Use this application at your own risk.
+ 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 
   1. Since the Code originally belongs to Serval Project (batphone)(https://github.com/servalproject/batphone/), make sure to met the copyright terms and conditions of the Project.
-  2. Since Part of the Code belongs to  Marcos Diez -- marcos AT unitron.com.br (https://github.com/marcosdiez/shareviahttp),  make sure to met the copyright terms and conditions of this Project as well.
+ 
+  2. Since Part of the Code belongs to Project Share-via-Http by  Marcos Diez -- marcos AT unitron.com.br (https://github.com/marcosdiez/shareviahttp),  make sure to met the copyright terms and conditions of this Project as well.
